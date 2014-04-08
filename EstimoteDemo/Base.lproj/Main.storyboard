@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Functions-->
+        <!--View Controller - Demos-->
         <scene sceneID="evU-dC-wGh">
             <objects>
                 <viewController id="x3P-Xk-A6f" sceneMemberID="viewController">
@@ -21,6 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Distance Demo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -32,6 +33,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Proximity Demo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -43,6 +45,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Notification Demo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -53,23 +56,36 @@
                                 <rect key="frame" x="0.0" y="314" width="320" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Triangulation Demo">
+                                <state key="normal" title="Exact Distance Demo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="fdq-2Z-mSn" kind="push" id="MbC-5W-673"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRu-Un-NBf">
+                                <rect key="frame" x="0.0" y="375" width="320" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Triangulation Demo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fMN-Ix-p1i" kind="push" id="EdF-c0-UTH"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.020459282774953413" green="0.36905570652173914" blue="0.034383997752722349" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Functions" id="Z2V-Cl-qh4"/>
+                    <navigationItem key="navigationItem" title="Demos" id="Z2V-Cl-qh4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Hx-tn-e2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="303" y="75"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Distance-->
         <scene sceneID="rbC-hz-FvK">
             <objects>
                 <viewController id="4jd-eG-xI4" sceneMemberID="viewController">
@@ -80,15 +96,15 @@
                     <view key="view" contentMode="scaleToFill" id="FNY-LW-E91">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.02045928277" green="0.36905570650000002" blue="0.034383997749999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oou-lf-F5v"/>
+                    <navigationItem key="navigationItem" title="Distance" id="oou-lf-F5v"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9v-5d-iuf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913" y="-888"/>
+            <point key="canvasLocation" x="1369" y="-960"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Proximity-->
         <scene sceneID="HGC-RT-MuG">
             <objects>
                 <viewController id="atX-ce-Tjf" sceneMemberID="viewController">
@@ -99,15 +115,15 @@
                     <view key="view" contentMode="scaleToFill" id="7dl-Nz-SAW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.02045928277" green="0.36905570650000002" blue="0.034383997749999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="J2V-7q-I72"/>
+                    <navigationItem key="navigationItem" title="Proximity" id="J2V-7q-I72"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idE-R2-maY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913" y="-237"/>
+            <point key="canvasLocation" x="985" y="-609"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Notification-->
         <scene sceneID="AGP-LM-FbS">
             <objects>
                 <viewController id="cjZ-bF-bIQ" sceneMemberID="viewController">
@@ -118,15 +134,15 @@
                     <view key="view" contentMode="scaleToFill" id="wI5-qv-cxS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.02045928277" green="0.36905570650000002" blue="0.034383997749999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PNz-pq-4N2"/>
+                    <navigationItem key="navigationItem" title="Notification" id="PNz-pq-4N2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjq-vO-nOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913" y="427"/>
+            <point key="canvasLocation" x="769" y="75"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Exact Distance-->
         <scene sceneID="u7b-hW-Qtb">
             <objects>
                 <viewController id="fdq-2Z-mSn" sceneMemberID="viewController">
@@ -137,13 +153,32 @@
                     <view key="view" contentMode="scaleToFill" id="34W-1S-gNe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.02045928277" green="0.36905570650000002" blue="0.034383997749999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Anw-H5-exL"/>
+                    <navigationItem key="navigationItem" title="Exact Distance" id="Anw-H5-exL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSU-8c-Rio" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="1095"/>
+            <point key="canvasLocation" x="985" y="767"/>
+        </scene>
+        <!--View Controller - Triangulation-->
+        <scene sceneID="3Ab-CB-CED">
+            <objects>
+                <viewController id="fMN-Ix-p1i" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ltL-H0-sL6"/>
+                        <viewControllerLayoutGuide type="bottom" id="QQ5-ha-d61"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qfJ-KW-vWq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.02045928277" green="0.36905570650000002" blue="0.034383997749999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Triangulation" id="Hje-Av-oHB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="osw-20-5kX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369" y="1141"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r62-m4-ufr">
